@@ -1,0 +1,24 @@
+C:\Users\ilanizovtsev>scala
+Welcome to Scala 2.13.1 (Java HotSpot(TM) 64-Bit Server VM, Java 12.0.2).
+Type in expressions for evaluation. Or try :help.
+
+scala> def greetings(greetWord: String = "Hello", name: String = "Nizovtsev Ilya") = println(s"$greetWord Scala! This is $name")
+greetings: (greetWord: String, name: String)Unit
+
+scala> greetings()
+Hello Scala! This is Nizovtsev Ilya
+
+scala> greetings(greetWord = "Hola")
+Hola Scala! This is Nizovtsev Ilya
+
+scala> greetings(greetWord = "Guten tag")
+Guten tag Scala! This is Nizovtsev Ilya
+
+scala> greetings(name = "Nizovtsev Ilya".reverse)
+Hello Scala! This is aylI vestvoziN
+
+scala> greetings("Hola", "Nizovtsev Ilya".reverse)
+Hola Scala! This is aylI vestvoziN
+
+scala> greetings("Guten tag", "Nizovtsev Ilya".reverse)
+Guten tag Scala! This is aylI vestvoziN
