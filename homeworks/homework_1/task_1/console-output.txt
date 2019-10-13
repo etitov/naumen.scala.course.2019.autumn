@@ -1,0 +1,325 @@
+Welcome to Scala 2.12.10 (Java HotSpot(TM) 64-Bit Server VM, Java 12.0.1).
+Type in expressions for evaluation. Or try :help.
+
+scala> val name = "Ilya"
+name: String = Ilya
+
+scala> Console.
+BLACK     BOLD      INVISIBLE   RESET        YELLOW     out           readByte     readLine    readf2   withErr
+BLACK_B   CYAN      MAGENTA     REVERSED     YELLOW_B   print         readChar     readLong    readf3   withIn
+BLINK     CYAN_B    MAGENTA_B   UNDERLINED   err        printf        readDouble   readShort   setErr   withOut
+BLUE      GREEN     RED         WHITE        flush      println       readFloat    readf       setIn
+BLUE_B    GREEN_B   RED_B       WHITE_B      in         readBoolean   readInt      readf1      setOut
+
+scala> Console.println("Hello Scala! This is $name")
+Hello Scala! This is $name
+
+scala> Console.println("Hello Scala! This is ${name}")
+Hello Scala! This is ${name}
+
+scala> Console.println(s"Hello Scala! This is $name")
+Hello Scala! This is Ilya
+
+scala> val hello = "Hello Scala! This is"
+hello: String = Hello Scala! This is
+
+scala> String.
+CASE_INSENSITIVE_ORDER   copyValueOf   format   join   valueOf
+
+scala> String.join(
+Display all 435 possibilities? (y or n)
+#::                               NegativeArraySizeException        UnsupportedOperationException
++:                                NetHood                           Vector
+:+                                Nil                               VerifyError
+::                                NoClassDefFoundError              Videos
+<:<                               NoManifest                        VirtualMachineError
+=:=                               NoSuchElementException            Void
+???                               NoSuchFieldError                  _root_
+AbstractMethodError               NoSuchFieldException              annotation
+Any                               NoSuchMethodError                 ansel
+AnyRef                            NoSuchMethodException             any2ArrowAssoc
+AnyVal                            None                              any2Ensuring
+AnyValCompanion                   NotImplementedError               any2stringadd
+App                               NotNull                           any2stringfmt
+AppData                           Nothing                           arrayToCharSequence
+Appendable                        Nox_share                         assert
+Application Data                  Null                              assume
+ArithmeticException               NullPointerException              augmentString
+Array                             Number                            beans
+ArrayCharSequence                 NumberFormatException             boolean2Boolean
+ArrayIndexOutOfBoundsException    Numeric                           booleanArrayOps
+ArrayStoreException               Object                            booleanWrapper
+ArrowAssoc                        OneDrive                          byte2Byte
+AssertionError                    OptManifest                       byteArrayOps
+AutoCloseable                     Option                            byteWrapper
+BigDecimal                        Ordered                           char2Character
+BigInt                            Ordering                          charArrayOps
+Boolean                           OutOfMemoryError                  charWrapper
+Boolean2boolean                   Override                          classManifest
+BootstrapMethodError              Package                           classOf
+BufferedIterator                  Pair                              collection
+Byte                              PartialFunction                   com
+Byte2byte                         PartialOrdering                   compat
+Char                              PartiallyOrdered                  concurrent
+CharSequence                      Pictures                          conforms
+Character                         Predef                            constant
+Character2char                    PrintHood                         deprecated
+Class                             Process                           deprecatedInheritance
+ClassCastException                ProcessBuilder                    deprecatedName
+ClassCircularityError             ProcessHandle                     deprecatedOverriding
+ClassFormatError                  Product                           double2Double
+ClassLoader                       Product1                          doubleArrayOps
+ClassManifest                     Product10                         doubleWrapper
+ClassNotFoundException            Product11                         exceptionWrapper
+ClassValue                        Product12                         fallbackStringCanBuildFrom
+CloneNotSupportedException        Product13                         float2Float
+Cloneable                         Product14                         floatArrayOps
+Comparable                        Product15                         floatWrapper
+Compiler                          Product16                         genericArrayOps
+Console                           Product17                         genericWrapArray
+Contacts                          Product18                         hello
+Cookies                           Product19                         identity
+Creative Cloud Files              Product2                          images
+DelayedInit                       Product20                         implicitly
+Deprecated                        Product21                         inline
+DeprecatedConsole                 Product22                         instrument
+DeprecatedPredef                  Product3                          int2Integer
+Desktop                           Product4                          intArrayOps
+Documents                         Product5                          intWrapper
+Double                            Product6                          invoke
+Double2double                     Product7                          io
+Downloads                         Product8                          java
+Dropbox                           Product9                          javax
+DummyImplicit                     Proxy                             jdk
+Dynamic                           Range                             jline
+Either                            Readable                          language
+Ensuring                          Recent                            languageFeature
+Enum                              ReflectiveOperationException      locally
+EnumConstantNotPresentException   Responder                         long2Long
+Enumeration                       RichException                     longArrayOps
+Equals                            Right                             longWrapper
+Equiv                             Runnable                          management
+Error                             Runtime                           manifest
+Exception                         RuntimeException                  math
+ExceptionInInitializerError       RuntimePermission                 module
+FallbackArrayBuilding             SafeVarargs                       name
+Favorites                         Saved Games                       native
+Float                             ScalaReflectionException          netscape
+Float2float                       Searches                          noinline
+Fractional                        SecurityException                 optManifest
+Function                          SecurityManager                   org
+Function0                         SendTo                            package
+Function1                         Seq                               print
+Function10                        SeqCharSequence                   printf
+Function11                        SerialVersionUID                  println
+Function12                        Serializable                      readBoolean
+Function13                        Set                               readByte
+Function14                        Short                             readChar
+Function15                        Short2short                       readDouble
+Function16                        Singleton                         readFloat
+Function17                        Some                              readInt
+Function18                        Specializable                     readLine
+Function19                        StackOverflowError                readLong
+Function2                         StackTraceElement                 readShort
+Function20                        StackWalker                       readf
+Function21                        Stream                            readf1
+Function22                        StrictMath                        readf2
+Function3                         String                            readf3
+Function4                         StringBuffer                      ref
+Function5                         StringBuilder                     refArrayOps
+Function6                         StringCanBuildFrom                reflect
+Function7                         StringContext                     remote
+Function8                         StringFormat                      require
+Function9                         StringIndexOutOfBoundsException   res0
+FunctionalInterface               SuppressWarnings                  res1
+Google Диск                       Symbol                            res2
+IllegalAccessError                Synfig                            runtime
+IllegalAccessException            System                            scala
+IllegalArgumentException          Thread                            seqToCharSequence
+IllegalCallerException            ThreadDeath                       short2Short
+IllegalMonitorStateException      ThreadGroup                       shortArrayOps
+IllegalStateException             ThreadLocal                       shortWrapper
+IllegalThreadStateException       Throwable                         source
+Immutable                         Traversable                       specialized
+IncompatibleClassChangeError      TraversableOnce                   sun
+IndexOutOfBoundsException         Triple                            swing
+IndexedSeq                        Tuple1                            sys
+InheritableThreadLocal            Tuple10                           text
+InstantiationError                Tuple11                           throws
+InstantiationException            Tuple12                           toolbarButtonGraphics
+Int                               Tuple13                           tools
+Integer                           Tuple14                           transient
+Integer2int                       Tuple15                           tuple2ToZippedOps
+Integral                          Tuple16                           tuple3ToZippedOps
+InternalError                     Tuple17                           unaugmentString
+InterruptedException              Tuple18                           unchecked
+Iterable                          Tuple19                           unitArrayOps
+Iterator                          Tuple2                            unwrapString
+LayerInstantiationException       Tuple20                           util
+Left                              Tuple21                           vmlogs
+LinkageError                      Tuple22                           volatile
+Links                             Tuple3                            wrapBooleanArray
+List                              Tuple4                            wrapByteArray
+Local Settings                    Tuple5                            wrapCharArray
+Long                              Tuple6                            wrapDoubleArray
+Long2long                         Tuple7                            wrapFloatArray
+LowPriorityImplicits              Tuple8                            wrapIntArray
+Manifest                          Tuple9                            wrapLongArray
+Map                               TypeNotPresentException           wrapRefArray
+MatchError                        UninitializedError                wrapShortArray
+Math                              UninitializedFieldError           wrapString
+MicrosoftEdgeBackups              UniquenessCache                   wrapUnitArray
+Module                            Unit                              xml
+ModuleLayer                       UnknownError                      Мои документы
+Music                             UnsatisfiedLinkError              Шаблоны
+Mutable                           UnsupportedClassVersionError      главное меню
+
+scala> String[] splitted = hello.split(" ")
+<console>:1: error: identifier expected but ']' found.
+       String[] splitted = hello.split(" ")
+              ^
+
+scala> Array<String> splitted = hello.split(" ")
+<console>:13: error: value < is not a member of object Array
+       Array<String> splitted = hello.split(" ")
+            ^
+<console>:13: error: not found: value splitted
+       Array<String> splitted = hello.split(" ")
+                     ^
+
+scala> val splitted = hello.split(" ")
+splitted: Array[String] = Array(Hello, Scala!, This, is)
+
+scala> splitted[0] = "Bye Bye"
+<console>:1: error: identifier expected but integer literal found.
+       splitted[0] = "Bye Bye"
+                ^
+
+scala> splitted(0) = "Bye Bye"
+
+scala> splitted.head = "Bye Bye"
+<console>:12: error: value head_= is not a member of scala.collection.mutable.ArrayOps.ofRef[String]
+       splitted.head = "Bye Bye"
+                ^
+
+scala> splitted(0) = "Bye Bye"
+
+scala> splitted(0);
+res6: String = Bye Bye
+
+scala> hello = splitted.
+++              count            hasDefiniteSize      maxBy               sameElements    toBuffer
+++:             deep             head                 min                 scan            toIndexedSeq
++:              diff             headOption           minBy               scanLeft        toIterable
+/:              distinct         indexOf              mkString            scanRight       toIterator
+:+              drop             indexOfSlice         nonEmpty            segmentLength   toList
+:\              dropRight        indexWhere           orElse              seq             toMap
+addString       dropWhile        indices              padTo               size            toSeq
+aggregate       elemManifest     init                 par                 slice           toSet
+andThen         elemTag          inits                partition           sliding         toStream
+apply           endsWith         intersect            patch               sortBy          toTraversable
+applyOrElse     exists           isDefinedAt          permutations        sortWith        toVector
+array           filter           isEmpty              prefixLength        sorted          transform
+canEqual        filterNot        isTraversableAgain   product             span            transpose
+clone           find             iterator             reduce              splitAt         union
+collect         flatMap          last                 reduceLeft          startsWith      unzip
+collectFirst    flatten          lastIndexOf          reduceLeftOption    stringPrefix    unzip3
+combinations    fold             lastIndexOfSlice     reduceOption        sum             update
+companion       foldLeft         lastIndexWhere       reduceRight         tail            updated
+compose         foldRight        lastOption           reduceRightOption   tails           view
+contains        forall           length               repr                take            withFilter
+containsSlice   foreach          lengthCompare        reverse             takeRight       zip
+copyToArray     genericBuilder   lift                 reverseIterator     takeWhile       zipAll
+copyToBuffer    groupBy          map                  reverseMap          to              zipWithIndex
+corresponds     grouped          max                  runWith             toArray
+
+scala> hello = splitted.mkString(" ")
+<console>:13: error: reassignment to val
+       hello = splitted.mkString(" ")
+             ^
+
+scala> val new_hello = splitted.mkString(" ")
+new_hello: String = Bye Bye Scala! This is
+
+scala> Console.println(new_hello)
+Bye Bye Scala! This is
+
+scala> Console.println(new_hello + name)
+Bye Bye Scala! This isIlya
+
+scala> name.
+*                     contains            hasDefiniteSize       minBy                 scanRight       toByte
++                     containsSlice       hashCode              mkString              segmentLength   toCharArray
+++                    contentEquals       head                  nonEmpty              self            toDouble
+++:                   copyToArray         headOption            offsetByCodePoints    seq             toFloat
++:                    copyToBuffer        indent                orElse                size            toIndexedSeq
+/:                    corresponds         indexOf               padTo                 slice           toInt
+:+                    count               indexOfSlice          par                   sliding         toIterable
+:\                    describeConstable   indexWhere            partition             sortBy          toIterator
+<                     diff                indices               patch                 sortWith        toList
+<=                    distinct            init                  permutations          sorted          toLong
+>                     drop                inits                 prefixLength          span            toLowerCase
+>=                    dropRight           intern                product               split           toMap
+addString             dropWhile           intersect             r                     splitAt         toSeq
+aggregate             endsWith            isBlank               reduce                startsWith      toSet
+andThen               equals              isDefinedAt           reduceLeft            stringPrefix    toShort
+apply                 equalsIgnoreCase    isEmpty               reduceLeftOption      strip           toStream
+applyOrElse           exists              isTraversableAgain    reduceOption          stripLeading    toString
+canEqual              filter              iterator              reduceRight           stripLineEnd    toTraversable
+capitalize            filterNot           last                  reduceRightOption     stripMargin     toUpperCase
+charAt                find                lastIndexOf           regionMatches         stripPrefix     toVector
+chars                 flatMap             lastIndexOfSlice      repeat                stripSuffix     transform
+codePointAt           flatten             lastIndexWhere        replace               stripTrailing   transpose
+codePointBefore       fold                lastOption            replaceAll            subSequence     trim
+codePointCount        foldLeft            length                replaceAllLiterally   substring       union
+codePoints            foldRight           lengthCompare         replaceFirst          sum             unzip
+collect               forall              lift                  repr                  tail            unzip3
+collectFirst          foreach             lines                 resolveConstantDesc   tails           updated
+combinations          format              linesIterator         reverse               take            view
+companion             formatLocal         linesWithSeparators   reverseIterator       takeRight       withFilter
+compare               genericBuilder      map                   reverseMap            takeWhile       zip
+compareTo             getBytes            matches               runWith               to              zipAll
+compareToIgnoreCase   getChars            max                   sameElements          toArray         zipWithIndex
+compose               groupBy             maxBy                 scan                  toBoolean
+concat                grouped             min                   scanLeft              toBuffer
+
+scala> name.reverse()
+<console>:13: error: not enough arguments for method apply: (index: Int)Char in class StringOps.
+Unspecified value parameter index.
+       name.reverse()
+                   ^
+
+scala> name.reverse
+res10: String = aylI
+
+scala> Console.println(new_hello + " " + name)
+Bye Bye Scala! This is Ilya
+
+scala> name = name.reverse
+<console>:12: error: reassignment to val
+       name = name.reverse
+            ^
+
+scala> val new_name = name.reverse
+new_name: String = aylI
+
+scala> Console.println(new_hello + " " + new_name)
+Bye Bye Scala! This is aylI
+
+scala> Console.println(hello + " " + new_name)
+Hello Scala! This is aylI
+
+scala> splitted(0) = "здарова"
+
+scala> splitted(0)
+res15: String = чфрЁютр
+
+scala> splitted(0) = "Hi"
+
+scala> val new_new_hello = splitted.mkString(" ")
+new_new_hello: String = Hi Scala! This is
+
+scala> Console.println(new_new_hello + " " + new_name)
+Hi Scala! This is aylI
+
+scala>
