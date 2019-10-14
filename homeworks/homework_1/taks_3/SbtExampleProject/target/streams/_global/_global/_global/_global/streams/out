@@ -1,0 +1,3 @@
+[debug] [watch] [sbtexampleproject / Compile / run] Found inputs: C:\Users\iwdok1\SbtExampleProject\*.{java,scala},C:\Users\iwdok1\SbtExampleProject\src\main\java\**\*.{java,scala},C:\Users\iwdok1\SbtExampleProject\src\main\resources\**\*,C:\Users\iwdok1\SbtExampleProject\src\main\scala\**\*.{java,scala},C:\Users\iwdok1\SbtExampleProject\src\main\scala-2.13\**\*.{java,scala}
+[info] 1. Monitoring source files for sbtexampleproject/run...
+[info]    Press <enter> to interrupt or '?' for more options.

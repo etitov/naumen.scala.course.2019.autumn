@@ -1,0 +1,48 @@
+C:\Users\iwdok1>scala
+Welcome to Scala 2.13.1 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_221).
+Type in expressions for evaluation. Or try :help.
+
+scala> val hello_word: String = "Hello"
+hello_word: String = Hello
+
+scala> val text: String = " Scala! This is ";
+text: String = " Scala! This is "
+
+scala> val name = "Andrey Shapovalov";
+name: String = Andrey Shapovalov
+
+scala> println(hello_word + text + name);
+Hello Scala! This is Andrey Shapovalov
+
+scala> val hello_word: String = "Hola"
+hello_word: String = Hola
+
+scala> println(hello_word + text + name);
+Hola Scala! This is Andrey Shapovalov
+
+scala> val hello_word: String = "Guten Tag"
+hello_word: String = Guten Tag
+
+scala> println(hello_word + text + name);
+Guten Tag Scala! This is Andrey Shapovalov
+
+scala> val reversed_name = new StringBuffer(name).reverse().toString();
+reversed_name: String = volavopahS yerdnA
+
+scala> val hello_word: String = "Hello"
+hello_word: String = Hello
+
+scala> println(hello_word + text + reversed_name);
+Hello Scala! This is volavopahS yerdnA
+
+scala> val hello_word: String = "Hola"
+hello_word: String = Hola
+
+scala> println(hello_word + text + reversed_name);
+Hola Scala! This is volavopahS yerdnA
+
+scala> val hello_word: String = "Goten Tag"
+hello_word: String = Goten Tag
+
+scala> println(hello_word + text + reversed_name);
+Goten Tag Scala! This is volavopahS yerdnA
