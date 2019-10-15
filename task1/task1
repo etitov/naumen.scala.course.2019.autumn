@@ -1,0 +1,38 @@
+Microsoft Windows [Version 10.0.18362.388]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\MPISHI>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) Client VM, Java 1.8.0_161).
+Type in expressions for evaluation. Or try :help.
+
+scala> val name : String = "Mchanga Kutemba"
+name: String = Mchanga Kutemba
+
+scala> println("Hello Scala! This is"+name)
+Hello Scala! This isMchanga Kutemba
+
+scala> val words : String = " Scaala! This is "
+words: String = " Scala! This is "
+
+scala> println("Bonjour"+name+words)
+BonjourMchanga Kutemba Scala! This is
+
+scala> println("Bonjour "+words+name)
+Bonjour  Scala! This is Mchanga Kutemba
+
+scala> println("Marhaba "+words+name)
+Marhaba  Scala! This is Mchanga Kutemba
+
+scala> println("Hola "+words+name)
+Hola  Scala! This is Mchanga Kutemba
+
+scala> println("Hola "+words+name.reverse)
+Hola  Scala! This is abmetuK agnahcM
+
+scala> println("Bonjour "+words+name.reverse)
+Bonjour  Scala! This is abmetuK agnahcM
+
+scala> println("Marhaba "+words+name.reverse)
+Marhaba  Scala! This is abmetuK agnahcM
+
+scala>
