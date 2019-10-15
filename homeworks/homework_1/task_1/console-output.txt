@@ -1,0 +1,49 @@
+Microsoft Windows [Version 10.0.17763.805]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2018. Все права защищены.
+
+C:\Users\ars.ants\IdeaProjects\naumen.scala.course.2019.autumn\homeworks\homework_1\task_1>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_201).
+Type in expressions for evaluation. Or try :help.
+
+scala> val name = "Arseny Antsiferov"
+name: String = Arseny Antsiferov
+
+scala> val hello = s"Hello Scala! This is $name"
+hello: String = Hello Scala! This is Arseny Antsiferov
+
+scala> println(hello)
+Hello Scala! This is Arseny Antsiferov
+
+scala> val hola = s"Hola Scala! This is $name"
+hola: String = Hola Scala! This is Arseny Antsiferov
+
+scala> println(hola)
+Hola Scala! This is Arseny Antsiferov
+
+scala> val gutentag = s"Guten tag Scala! This is $name"
+gutentag: String = Guten tag Scala! This is Arseny Antsiferov
+
+scala> println(gutentag)
+Guten tag Scala! This is Arseny Antsiferov
+
+scala> val rname = name.reverse
+rname: String = vorefistnA ynesrA
+
+scala> val rhello = s"Hello Scala! This is $rname"
+rhello: String = Hello Scala! This is vorefistnA ynesrA
+
+scala> println(rhello)
+Hello Scala! This is vorefistnA ynesrA
+
+scala> val rgutentag = s"Guten tag Scala! This is $rname"
+rgutentag: String = Guten tag Scala! This is vorefistnA ynesrA
+
+scala> println(rgutentag)
+Guten tag Scala! This is vorefistnA ynesrA
+
+scala> val rhola = s"Hola Scala! This is $rname"
+rhola: String = Hola Scala! This is vorefistnA ynesrA
+
+scala> println(rhola)
+Hola Scala! This is vorefistnA ynesrA
+
