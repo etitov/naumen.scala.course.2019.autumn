@@ -1,0 +1,5 @@
+[debug] [watch] [homeworktask3 / Compile / run] Found inputs: C:\HomeWorkTask3\*.{java,scala},C:\HomeWorkTask3\src\main\java\**\*.{java,scala},C:\HomeWorkTask3\src\main\resources\**\*,C:\HomeWorkTask3\src\main\scala\**\*.{java,scala},C:\HomeWorkTask3\src\main\scala-2.13\**\*.{java,scala}
+[info] 1. Monitoring source files for homeworktask3/run...
+[info]    Press <enter> to interrupt or '?' for more options.
+[debug] [watch] [debug] Received input event: Run().
+[debug] [watch] [debug] Received input event: Run().
