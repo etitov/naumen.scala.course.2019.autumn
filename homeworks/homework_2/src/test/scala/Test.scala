@@ -36,15 +36,15 @@ object Test extends TestSuite {
     'sortByHeavyweight - {
       assert(Exercises.sortByHeavyweight(
         Map(
-          "Gadolinium" -> (2, 7.9), "Iron" -> (2, 7.87), "Silver" -> (8, 10.5), "Titanium" -> (12, 4.54),
-          "Silicon" -> (1, 2.33), "Krypton" -> (5, 3.75), "Zinc" -> (4, 7.13), "Cerium" -> (15, 6.77)))
-        == Seq("Silicon", "Iron", "Gadolinium", "Zinc", "Krypton", "Silver", "Titanium", "Cerium"))
+          "Gadolinium" -> (3, 4.1), "Iron" -> (8, 12), "Silver" -> (8, 11), "Titanium" -> (12, 4.32),
+          "Silicon" -> (1, 3), "Krypton" -> (5, 12), "Zinc" -> (13, 7.13), "Cerium" -> (14, 6.1)))
+        == Seq("Silicon", "Gadolinium", "Krypton", "Silver", "Iron", "Titanium", "Zinc", "Cerium"))
       assert(Exercises.sortByHeavyweight(
         Map(
-          "Tin" -> (8, 7.29), "Platinum" -> (4, 21.45), "Nickel" -> (5, 8.91), "Plutonium" -> (3, 19.25),
-          "Titanium" -> (2, 10.50), "Lead" -> (2, 11.336), "Silver" -> (9, 4.505), "Uranium" -> (12, 19.04),
-          "Cesium" -> (3, 1.873), "Chrome" -> (1, 7.18), "Zirconium" -> (14, 6.45)))
-        == Seq("Chrome", "Cesium", "Titanium", "Lead", "Plutonium", "Nickel", "Platinum", "Silver", "Tin", "Zirconium", "Uranium"))
+          "Tin" -> (8, 2), "Platinum" -> (4, 21.45), "Nickel" -> (5, 8.91), "Plutonium" -> (2, 19.025),
+          "Titanium" -> (1, 4), "Lead" -> (2, 11.336), "Silver" -> (10, 4.525), "Uranium" -> (11, 19.04),
+          "Cesium" -> (5, 1.877), "Chrome" -> (1, 7.128), "Zirconium" -> (15, 6.415)))
+        == Seq("Titanium", "Chrome", "Lead", "Plutonium", "Cesium", "Tin", "Nickel", "Platinum", "Silver", "Zirconium", "Uranium"))
     }
   }
 }

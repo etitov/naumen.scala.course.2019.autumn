@@ -94,9 +94,14 @@ object Exercises {
 
   def sortByHeavyweight(ballsArray: Map[String, (Int, Double)] = balls): Seq[String] = {
     def calculateWeight(radius: Int, density: Double): Double = {
-      4 / 3 * Math.PI * radius * density
+      return 4 / 3 * Math.PI * Math.pow(radius, 3) * density
     }
 
-    return ballsArray.mapValues(calculateWeight).toSeq.sortBy(_._2).map(_._1)
+    def calcWeight(t: (Int, Double)): Double = {
+      val (radius, weight) = t
+      return calculateWeight(radius, weight)
+    }
+
+    return ballsArray.mapValues(calcWeight).toSeq.sortBy(_._2).map(_._1)
   }
 }
