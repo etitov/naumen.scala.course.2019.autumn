@@ -2,7 +2,113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fd886c9-0067-45e7-8083-8500abb8124d" name="Default Changelist" comment="home">
+      <change afterPath="$PROJECT_DIR$/.idea/Scala2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeworks/homework_2/Main$.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homeworks/homework_2/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scala1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homeworks/homework_1/task_1/console-output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task_1/console-output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/task2" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task_2/task2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/modules/task3-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/modules/task3-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/modules/task3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/modules/task3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$5ec99c13da2af361c162$.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$5ec99c13da2af361c162$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$5ec99c13da2af361c162.cache" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$5ec99c13da2af361c162.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$5ec99c13da2af361c162.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$5ec99c13da2af361c162.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$7da39a5ea88b0c25329f$.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$7da39a5ea88b0c25329f$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$7da39a5ea88b0c25329f.cache" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$7da39a5ea88b0c25329f.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$7da39a5ea88b0c25329f.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$7da39a5ea88b0c25329f.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$f61c4b55f74c4d78bf66$.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$f61c4b55f74c4d78bf66$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$f61c4b55f74c4d78bf66.cache" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$f61c4b55f74c4d78bf66.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$f61c4b55f74c4d78bf66.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$f61c4b55f74c4d78bf66.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$fe2dfad51260ae43414c$.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$fe2dfad51260ae43414c$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$fe2dfad51260ae43414c.cache" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$fe2dfad51260ae43414c.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/config-classes/$fe2dfad51260ae43414c.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/config-classes/$fe2dfad51260ae43414c.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/_global/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/_global/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/csrConfiguration/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/csrProject/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/ivyConfiguration/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/ivySbt/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/moduleSettings/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/projectDescriptors/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/_global/_global/discoveredMainClasses/data" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/_global/_global/discoveredMainClasses/data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/_global/_global/managedSourcePaths/previous" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/_global/_global/managedSourcePaths/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/internalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/unmanagedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/compile/unmanagedJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/runtime/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/runtime/unmanagedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/runtime/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/project/target/streams/runtime/unmanagedJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/project/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/src/main/scala/Package/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/src/main/scala/Package/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/scala-2.13/classes/Package/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/scala-2.13/classes/Package/Main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/scala-2.13/classes/Package/Main$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/scala-2.13/classes/Package/Main$delayedInit$body.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/scala-2.13/classes/Package/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/scala-2.13/classes/Package/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/scala-2.13/update/update_cache_2.13/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/scala-2.13/update/update_cache_2.13/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/scala-2.13/update/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/_global/checkBuildSources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/_global/checkBuildSources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/_global/dumpStructure/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/_global/dumpStructure/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/csrConfiguration/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/csrProject/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/ivyConfiguration/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/ivySbt/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/moduleSettings/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/projectDescriptors/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/updateClassifiers/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/updateClassifiers/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/compile/unmanagedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/compile/unmanagedJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/runtime/unmanagedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/runtime/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/runtime/unmanagedJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/test/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/test/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/test/unmanagedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/test/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/target/streams/test/unmanagedJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/homeworks/homework_1/task3/target/streams/test/unmanagedJars/_global/streams/export" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -13,8 +119,56 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework_1/task_1/console-output.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="562">
+              <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework_1/task_2/task2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task1/task1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="37" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework_2/Main$.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/task1/task1" />
+        <option value="$PROJECT_DIR$/homeworks/homework_1/task_1/console-output.txt" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
@@ -28,9 +182,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Scala2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scala2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scala2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scala2" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scala2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scala2" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scala2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scala2" type="462c0819:PsiDirectoryNode" />
+              <item name="task1" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -40,6 +220,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks\homework_2" />
+      <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks\homework_1" />
+      <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks\homework_1\task_2" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -73,14 +260,14 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Learn" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25416037" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -92,17 +279,63 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework_1/homework_1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework_1/task_1/console-output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework_1/task_2/task2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework_2/main.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1/task1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="37" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework_2/Main$.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
 </project>
