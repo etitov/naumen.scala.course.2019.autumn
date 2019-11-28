@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fd886c9-0067-45e7-8083-8500abb8124d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/homeworks/homework_4/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homeworks/homework_4/build.sbt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homeworks/homework_4/homework_4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homeworks/homework_4/project/build.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homeworks/homework_4/src/main/scala/Cell.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homeworks/homework_4/src/main/scala/Table.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homeworks/homework_4/src/test/scala/Test.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homeworks/homework_2/src/main/scala/Exercises.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="34">
               <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
@@ -47,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homeworks/homework_4/src/main/scala/Cell.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="255">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -66,6 +59,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="etitov" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="naumen.scala.course.2019.autumn" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -90,8 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,6 +134,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,13 +147,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks\homework_2" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks\homework_2" />
       <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks\homework_1" />
       <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks\homework_1\task_2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks" />
+      <recent name="C:\Users\MPISHI\Desktop\Scala2\homeworks\homework_2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -232,17 +231,24 @@
       <option name="project" value="LOCAL" />
       <updated>1571838694876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="homework 4">
+      <created>1574414491141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574414491141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1065000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25869894" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -261,7 +267,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="GitHub Pull Requests" order="12" visible="true" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -278,7 +285,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="homework 2" />
     <MESSAGE value="homework_2done" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework_2done" />
+    <MESSAGE value="homework 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework 4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -290,13 +298,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homeworks/homework_1/homework_1.md">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/homeworks/homework_2/Main$.java" />
     <entry file="file://$PROJECT_DIR$/homeworks/homework_1/task3/src/main/scala/Package/Main.scala">
@@ -337,6 +345,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework_2/src/main/scala/Exercises.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homeworks/homework_2/src/test/scala/Test.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -344,17 +359,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homeworks/homework_2/src/main/scala/Exercises.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homeworks/homework_4/src/main/scala/Cell.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="255">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>
