@@ -1,0 +1,23 @@
+C:\Users\Konstantin>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_201).
+Type in expressions for evaluation. Or try :help.
+scala> print("Hello, Kostya");
+Hello, Kostya
+scala> println("Hello, Scala. This is Kostya");
+Hello, Scala. This is Kostya
+
+scala> println("Halo, Scala. This is Kostya");
+Halo, Scala. This is Kostya
+
+scala> println("Salut, Scala. This is Kostya");
+Salut, Scala. This is Kostya
+scala> println("Hello, Scala. This is yastoK");
+Hello, Scala. This is yastoK
+
+scala> println("Halo, Scala. This is yastoK");
+Halo, Scala. This is yastoK
+
+scala> println("salut, Scala. This is yastoK");
+salut, Scala. This is yastoK
+
+scala>
