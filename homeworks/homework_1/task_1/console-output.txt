@@ -1,0 +1,63 @@
+Microsoft Windows [Version 10.0.18362.418]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2019. Все права защищены.
+
+C:\Users\Виктор>scala
+Welcome to Scala 2.13.1 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_221).
+Type in expressions for evaluation. Or try :help.
+
+scala> val a="Scala! This is"
+a: String = Scala! This is
+
+scala> val c ="Bonjuir"
+c: String = Bonjuir
+
+
+scala> val b=" Viktor Zhukov"
+b: String = Viktor Zhukov
+
+scala> val e ="hello "
+e: String = hello
+
+scala> println (e+a)
+hello Scala! This is
+
+scala> println (e+a+b)
+hello Scala! This is Viktor Zhukov
+
+
+scala> println (c+a+ b.reverse)
+Bonjuir Scala! This is vokuhZ rotkiV
+
+scala>
+=======
+Microsoft Windows [Version 10.0.18362.418]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2019. Все права защищены.
+
+C:\Users\Виктор>scala
+Welcome to Scala 2.13.1 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_221).
+Type in expressions for evaluation. Or try :help.
+
+scala> val a="Scala! This is"
+a: String = Scala! This is
+
+scala> val c ="Bonjuir"
+c: String = Bonjuir
+
+
+scala> val b=" Viktor Zhukov"
+b: String = Viktor Zhukov
+
+scala> val e ="hello "
+e: String = hello
+
+scala> println (e+a)
+hello Scala! This is
+
+scala> println (e+a+b)
+hello Scala! This is Viktor Zhukov
+
+
+scala> println (c+a+ b.reverse)
+Bonjuir Scala! This is vokuhZ rotkiV
+
+scala>

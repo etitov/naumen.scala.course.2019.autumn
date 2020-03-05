@@ -1,0 +1,5 @@
+[debug] [watch] [testsbt / Compile / run] Found inputs: C:\Users\Виктор\IdeaProjects\TestSbt\*.{java,scala},C:\Users\Виктор\IdeaProjects\TestSbt\src\main\java\**\*.{java,scala},C:\Users\Виктор\IdeaProjects\TestSbt\src\main\resources\**\*,C:\Users\Виктор\IdeaProjects\TestSbt\src\main\scala\**\*.{java,scala},C:\Users\Виктор\IdeaProjects\TestSbt\src\main\scala-2.13\**\*.{java,scala}
+[info] 1. Monitoring source files for testsbt/run...
+[info]    Press <enter> to interrupt or '?' for more options.
+[debug] [watch] [debug] Received input event: Run().
+[debug] [watch] [debug] Received input event: Run().
