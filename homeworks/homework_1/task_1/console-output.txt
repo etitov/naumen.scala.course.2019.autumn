@@ -1,0 +1,24 @@
+C:\Users\Саша>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) Client VM, Java 1.8.0_221).
+Type in expressions for evaluation. Or try :help.
+
+scala> var name = "Alexander Nokhrin"
+name: String = Alexander Nokhrin
+
+scala> println("Hello Scala! This is " + name)
+Hello Scala! This is Alexander Nokhrin
+
+scala> var greetings = Array("Hello", "Привет", "Hola", "Wassup")
+greetings: Array[String] = Array(Hello, ╧ЁштхЄ, Hola, Wassup)
+
+scala> for (hello <- greetings) println(hello + " Scala! This is " + name)
+Hello Scala! This is Alexander Nokhrin
+Привет Scala! This is Alexander Nokhrin
+Hola Scala! This is Alexander Nokhrin
+Wassup Scala! This is Alexander Nokhrin
+
+scala> for (hello <- greetings) println(hello + " Scala! This is " + name.reverse)
+Hello Scala! This is nirhkoN rednaxelA
+Привет Scala! This is nirhkoN rednaxelA
+Hola Scala! This is nirhkoN rednaxelA
+Wassup Scala! This is nirhkoN rednaxelA
