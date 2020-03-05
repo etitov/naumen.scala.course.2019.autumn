@@ -1,0 +1,28 @@
+Microsoft Windows [Version 6.3.9600]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2013. Все права защищены.
+
+C:\Users\Free>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) Client VM, Java 1.8.0_221).
+Type in expressions for evaluation. Or try :help.
+
+scala> def greet(greeting: String="Hello", name: String = "Obukhov Anatoly") = p
+rintln(s"$greeting Scala! This is $name")
+greet: (greeting: String, name: String)Unit
+
+scala> greet()
+Hello Scala! This is Obukhov Anatoly
+
+scala> greet(greeting="Hallo")
+Hallo Scala! This is Obukhov Anatoly
+
+scala> greet(greeting="Bonjour")
+Bonjour Scala! This is Obukhov Anatoly
+
+scala> greet(name="Obukhov Anatoly".reverse)
+Hello Scala! This is ylotanA vohkubO
+
+scala> greet("Hallo", "Obukhov Anatoly".reverse)
+Hallo Scala! This is ylotanA vohkubO
+
+scala> greet("Bonjour", "Obukhov Anatoly".reverse)
+Bonjour Scala! This is ylotanA vohkubO
