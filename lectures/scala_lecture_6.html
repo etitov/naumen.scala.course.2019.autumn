@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Collection</title>
+    <title>Scala Collection</title>
 
     <meta name="description" content="Scala. Collection">
     <meta name="author" content="Titov Egor">
@@ -550,7 +550,7 @@ val a = List(10, 5, 8, 1, 7).sorted
 case class Cat (name: String, age: Int)
 
 
-val s = List(Cat("Мурзик", 2), Cat("Murka", 1))
+val s = List(Cat("Мурзик", 2), Cat("Murka", 1)).sorted
 //  error: No implicit Ordering defined for Cat.
 
 
@@ -558,15 +558,15 @@ val s = List(Cat("Мурзик", 2), Cat("Murka", 1))
 
 </section>
 <section>
-    <h2>sorted по максимому</h2>
+    <h2>не всё умеет sorted, решение</h2>
 
 <pre style="width:auto;"><code data-trim class="scala small">
-case class Cat (name: String, age: Int) extends Ordered [Cat] {
+implicit class CatOrdered (cat: Cat) extends Ordered [Cat] {
     val m1 = -1
     def compare (that: Cat): Int = {
-        if (this.name == that.name)
+        if (cat.name == that.name)
             0
-        else if (this.name > that.name)
+        else if (cat.name > that.name)
             1
         else 
             m1 //ammonite ломается
@@ -576,7 +576,7 @@ case class Cat (name: String, age: Int) extends Ordered [Cat] {
 
 </section>
 <section>
-    <h2>не всё умеет sorted, решение</h2>
+    <h2>sorted по максимому</h2>
 
 <pre style="width:auto;"><code data-trim class="scala small">
 
@@ -709,14 +709,14 @@ List                              // тк scala._ всегда автомати�
 <section> 
 <h2>Иерархия trait</h2>
 <center>
-<img src="img/collection/collections-diagram.svg"/>
+<img src="img/lecture_6/collections-diagram.svg"/>
 </center>
 
 </section>
 <section>
 <h2>Иерархия immutable</h2>
 <center>
-<img src="img/collection/collections-immutable-diagram.svg"/>
+<img src="img/lecture_6/collections-immutable-diagram.svg"/>
 </center>
 
 </section>
@@ -724,7 +724,7 @@ List                              // тк scala._ всегда автомати�
     <h2>Иерархия mutable</h2>
 
 <center>
-<img src="img/collection/collections-mutable-diagram.svg"/>
+<img src="img/lecture_6/collections-mutable-diagram.svg"/>
 </center>
 
 </section>
@@ -744,7 +744,6 @@ Set(1, 2, 3) != List(1, 2, 3)
 Set(1, 3, 2) == Set(1, 2, 3)
 
 </code></pre>
-
 </section>
 <section>
     <h2>Равенство</h2>
@@ -755,10 +754,356 @@ Set(1, 3, 2) == Set(1, 2, 3)
     </ul>
 </section>
 <section>
+    <h2>Равенство</h2>
+<pre style="width:auto;"><code data-trim class="scala small">
+List(1, 2, 3) == Vector(1, 2, 3)
+
+HashSet(1, 2) == TreeSet(2, 1)
+</code></pre>
+</section>
+
+<section>
+    <h2>Отображение. Методы</h2>
+<pre style="width:auto;"><code data-trim class="scala small">
+<ul>
+        <li>view</li>
+        <li>to <i>collection</i></li>
+    </ul>
+</code></pre>
+</section>
+<section>
+    <h2>Отображение.</h2>
+<pre style="width:auto;"><code data-trim class="scala small">
+val v = Vector(1 to 10: _ * )
+//v: scala.collection.immutable.Vector[Int] =
+// Vector(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+val v2 = v.map(_ + 1).map(_ * 2)
+//v2: scala.collection.immutable.Vector[Int] =
+// Vector(4, 6, 8, 10, 12, 14, 16, 18, 20, 22)
+</code></pre>
+</section>
+<section>
+    <h2>Отображение  Ленивость</h2>
+<pre style="width:auto;"><code data-trim class="scala small">
+def lazyMap[T, U](coll: Iterable[T], f: T => U) =
+  new Iterable[U] {
+    def iterator = coll.iterator.map(f) 
+  }
+</code></pre>
+</section>
+<section>
+    <h2>Отображение. Делаем ленивым</h2>
+<pre style="width:auto;"><code data-trim class="scala small">
+val vv = v.view
+//vv: scala.collection.IndexedSeqView[Int] = IndexedSeqView(&lt;not computed&gt;)
+val vv2 = vv.map(_ + 1)
+//vv2: scala.collection.IndexedSeqView[Int] = IndexedSeqView(&lt;not computed&gt;)
+val vv3 = vv2.map(_ * 2)
+//vv3: scala.collection.IndexedSeqView[Int] = IndexedSeqView(&lt;not computed&gt;)
+</code></pre>
+</section>
+<section>
+    <h2>Отобржение. Вычисляем.</h2>
+<pre style="width:auto;"><code data-trim class="scala small">
+val vv5 = vv3.to(Vector)
+//vv5: scala.collection.immutable.Vector[Int] = 
+// Vector(4, 6, 8, 10, 12, 14, 16, 18, 20, 22)
+
+val vv6 = vv3.to(List)
+//vv6: List[Int] = 
+// List(4, 6, 8, 10, 12, 14, 16, 18, 20, 22)
+</code></pre>
+</section>
+<section>
+    <h2>Performance. Seq. Immutable</h2>
+<pre style="width:auto;"><table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>head</th>
+      <th>tail</th>
+      <th>apply</th>
+      <th>update</th>
+      <th>prepend</th>
+      <th>append</th>
+      <th>insert</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="scala small">List</code></td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">LazyList</code></td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">ArraySeq</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">Vector</code></td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">Queue</code></td>
+      <td title="амортизированное константное время">aC</td>
+      <td title="амортизированное константное время">aC</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">Range</code></td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">String</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table></pre>
+</section>
+<section>
+    <h2>Performance. Seq. Mutable</h2>
+<pre style="width:auto;">
+<table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>head</th>
+      <th>tail</th>
+      <th>apply</th>
+      <th>update</th>
+      <th>prepend</th>
+      <th>append</th>
+      <th>insert</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="scala small">ArrayBuffer</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="амортизированное константное время">aC</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">ListBuffer</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">StringBuilder</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="амортизированное константное время">aC</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">Queue</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">ArraySeq</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">Stack</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">Array</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">ArrayDeque</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="константное время">C</td>
+      <td title="константное время">C</td>
+      <td title="амортизированное константное время">aC</td>
+      <td title="амортизированное константное время">aC</td>
+      <td title="линейное время">L</td>
+    </tr>
+  </tbody>
+</table>
+</pre>
+</section>
+<section>
+    <h2>Performance. Set/Map. Immutable</h2>
+<pre style="width:auto;"><table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>lookup</th>
+      <th>add</th>
+      <th>remove</th>
+      <th>min</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="scala small">HashSet/HashMap</code></td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">TreeSet/TreeMap</code></td>
+      <td title="логарифмическое время">Log</td>
+      <td title="логарифмическое время">Log</td>
+      <td title="логарифмическое время">Log</td>
+      <td title="логарифмическое время">Log</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">BitSet</code></td>
+      <td title="константное время">C</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей. Если биты плохо упакованы">eC<sup>*</sup></td>
+    </tr>
+    <tr>
+      <td><code class="scala small">VectorMap</code></td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="амортизированное константное время">aC</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">ListMap</code></td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+      <td title="линейное время">L</td>
+    </tr>
+  </tbody>
+</table></pre>
+</section>
+<section>
+    <h2>Performance. Set/Map. Mutable</h2>
+<pre style="width:auto;"><table>
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>lookup</th>
+      <th>add</th>
+      <th>remove</th>
+      <th>min</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="scala small">HashSet/HashMap</code></td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">WeakHashMap</code></td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей">eC</td>
+      <td title="линейное время">L</td>
+    </tr>
+    <tr>
+      <td><code class="scala small">BitSet</code></td>
+      <td title="константное время">C</td>
+      <td title="амортизированное константное время">aC</td>
+      <td title="константное время">C</td>
+      <td title="константное время, но с погрешностью, к примеру, на распределение хеш-ключей. Если биты плохо упакованы">eC<sup>*</sup></td>
+    </tr>
+    <tr>
+      <td><code class="scala small">TreeSet</code></td>
+      <td title="логарифмическое время">Log</td>
+      <td title="логарифмическое время">Log</td>
+      <td title="логарифмическое время">Log</td>
+      <td title="логарифмическое время">Log</td>
+    </tr>
+  </tbody>
+</table></pre>
+</section>
+<section>
     <h2>Scala <=> Java</h2>
 <pre style="width:auto;"><code data-trim class="scala small">
-import collection.JavaConverters._
-// import scala.jdk.CollectionConverters._ //2.13.0
+import scala.jdk.CollectionConverters._ 
+// import collection.JavaConverters._ //2.12 и ниже 
 
 val j1 = java.util.Arrays.asList("hey", "lol")
 //j1: java.util.List[String] = [hey, lol]
@@ -817,7 +1162,6 @@ Map           =>    java.util.Map
 <section>
     <h2>Scala в лоб</h2>
 
-
 <pre style="width:auto;"><code data-trim class="scala small">
 def bubblesort[A](arr: Array[A])(implicit ord: Ordering[A]): Array[A] = {
   import ord._
@@ -833,8 +1177,6 @@ def bubblesort[A](arr: Array[A])(implicit ord: Ordering[A]): Array[A] = {
   arr
 }
 </code></pre>
-
-
 
 </section>
 <section>
@@ -861,8 +1203,8 @@ def bubblesort[A](list: List[A])(implicit ord: Ordering[A]): List[A] = {
 
 <section>
     <h1>Конец</h2>
-    <p>и никогда не забываем по perfomance</p>
-    <p><a href ="https://docs.scala-lang.org/overviews/collections-2.13/performance-characteristics.html" target="_blank">Performance Characteristics</a></p>
+    <p></p>
+    <p><a href ="https://docs.scala-lang.org/overviews/collections-2.13/introduction.html" target="_blank">scala collecctions</a></p>
 </section>
         </div>
 
