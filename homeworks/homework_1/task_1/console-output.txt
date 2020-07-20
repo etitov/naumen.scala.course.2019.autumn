@@ -1,0 +1,38 @@
+Loading...
+Welcome to the Ammonite Repl 1.7.4
+(Scala 2.13.1 Java 11)
+If you like Ammonite, please support our development at www.patreon.com/lihaoyi
+@ def greet(greeting: String, name: String): Unit = {
+      printf("%s Scala! This is %s!", greeting, name)
+  } 
+defined function greet
+
+@ var myName: String = "Sergey Biryukov" 
+myName: String = "Sergey Biryukov"
+
+@ greet("Hello", myName) 
+Hello Scala! This is Sergey Biryukov!
+
+@ greet("Guten tag", myName) 
+Guten tag Scala! This is Sergey Biryukov!
+
+@ greet("こんにちは", myName) 
+こんにちは Scala! This is Sergey Biryukov!
+
+@ greet("您好",  myName) 
+您好 Scala! This is Sergey Biryukov!
+
+@ myName = myName.reverse 
+
+
+@ greet("Hello", myName) 
+Hello Scala! This is vokuyriB yegreS!
+
+@ greet("Guten tag", myName) 
+Guten tag Scala! This is vokuyriB yegreS!
+
+@ greet("こんにちは", myName) 
+こんにちは Scala! This is vokuyriB yegreS!
+
+@ greet("您好",  myName) 
+您好 Scala! This is vokuyriB yegreS!
