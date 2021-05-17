@@ -1,0 +1,48 @@
+C:\Users\Кирилл>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) Client VM, Java 1.8.0_131).
+Type in expressions for evaluation. Or try :help.
+
+scala> var hello = "Hello"
+hello: String = Hello
+
+scala> val midText = " Scala! This is "
+midText: String = " Scala! This is "
+
+scala> var name = "Kirill Elizarov"
+name: String = Kirill Elizarov
+
+scala> println(hello+midText+name)
+Hello Scala! This is Kirill Elizarov
+
+scala> hello = "Hola"
+hello: String = Hola
+
+scala> println(hello+midText+name)
+Hola Scala! This is Kirill Elizarov
+
+scala> hello = "Guten tag"
+hello: String = Guten tag
+
+scala> println(hello+midText+name)
+Guten tag Scala! This is Kirill Elizarov
+
+scala> name = name.reverse
+name: String = vorazilE lliriK
+
+scala> hello = "Hello"
+hello: String = Hello
+
+scala> println(hello+midText+name)
+Hello Scala! This is vorazilE lliriK
+
+scala> hello = "Hola"
+hello: String = Hola
+
+scala> println(hello+midText+name)
+Hola Scala! This is vorazilE lliriK
+
+scala> hello = "Guten tag"
+hello: String = Guten tag
+
+scala> println(hello+midText+name)
+Guten tag Scala! This is vorazilE lliriK
