@@ -1,0 +1,46 @@
+dikopylov@dikopylov-desktop:~$ sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/lihaoyi/Ammonite/releases/download/1.7.4/2.13-1.7.4) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm' && amm
+[sudo] password for dikopylov:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   600    0   600    0     0   1147      0 --:--:-- --:--:-- --:--:--  1147
+100 29.7M  100 29.7M    0     0  1865k      0  0:00:16  0:00:16 --:--:-- 3044k
+Loading...
+Compiling (synthetic)/ammonite/predef/interpBridge.sc
+Compiling (synthetic)/ammonite/predef/replBridge.sc
+Compiling (synthetic)/ammonite/predef/sourceBridge.sc
+Compiling (synthetic)/ammonite/predef/frontEndBridge.sc
+Compiling (synthetic)/ammonite/predef/DefaultPredef.sc
+Welcome to the Ammonite Repl 1.7.4
+(Scala 2.13.1 Java 11.0.4)
+If you like Ammonite, please support our development at www.patreon.com/lihaoyi
+
+@ val myName = "Dmitry Kopylov"
+myName: String = "Dmitry Kopylov"
+
+@ println(f"Hello Scala! This is $myName%s")
+Hello Scala! This is Dmitry Kopylov
+
+
+@ println(f"Hola Scala! This is $myName%s")
+Hola Scala! This is Dmitry Kopylov
+
+
+@ println(f"Guten Tag Scala! This is $myName%s")
+Guten Tag Scala! This is Dmitry Kopylov
+
+
+@ var myNameReverse = myName.reverse
+myNameReverse: String = "volypoK yrtimD"
+
+@ println(f"Hello Scala! This is $myNameReverse%s")
+Hello Scala! This is volypoK yrtimD
+
+
+@ println(f"Hola Scala! This is $myNameReverse%s")
+Hola Scala! This is volypoK yrtimD
+
+
+@ println(f"Guten Tag Scala! This is $myNameReverse%s")
+Guten Tag Scala! This is volypoK yrtimD
+
+
